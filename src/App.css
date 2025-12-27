@@ -1,0 +1,112 @@
+/* Layout */
+#root {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+  text-align: left; /* left-align like the screenshot */
+  background: #fff;
+}
+
+/* Typography */
+h2 {
+  margin: 0 0 1rem 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.section-title {
+  margin: 1.25rem 0 0.5rem 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+/* Form structure */
+.form {
+  display: block;
+}
+
+.form-row {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.form-input,
+.form-select {
+  width: 320px;
+  max-width: 100%;
+  height: 32px;
+  padding: 4px 8px;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  background: #fff;
+  outline: none;
+}
+
+.form-input:focus,
+.form-select:focus {
+  border-color: #b9b9b9;
+}
+
+/* Inline choice groups */
+.choice-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 2px;
+}
+
+.choice {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+}
+
+.choice input[type="radio"],
+.choice input[type="checkbox"] {
+  transform: translateY(1px);
+}
+
+/* Divider */
+.hr {
+  border: 0;
+  border-top: 1px solid #e3e3e3;
+  margin: 20px 0;
+}
+
+/* Summary styles to match colored values in screenshot */
+.summary {
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.summary strong {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
+}
+
+.summary .value {
+  color: #8b0000; /* dark red, similar to the screenshot */
+}
+
+.summary .value.capitalize {
+  text-transform: uppercase;
+}
+
+.summary .value.capitalized {
+  text-transform: capitalize;
+}
+
+/* Optional small card padding shown in the default Vite template */
+.card {
+  padding: 0;
+}
