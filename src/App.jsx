@@ -2,19 +2,15 @@ import { useState } from 'react'
 import './App.css'
 
 function Register() {
-  // Text fields (start empty)
   const [username, setUsername] = useState('')
   const [firstname, setFirstname] = useState('')
   const [lastname, setLastname] = useState('')
 
-  // Radio & Select (start with nothing selected)
-  const [gender, setGender] = useState('')   // '', not 'Male'
-  const [role, setRole] = useState('')       // '', so dropdown shows placeholder
+  const [gender, setGender] = useState('')   
+  const [role, setRole] = useState('')     
 
-  // Checkboxes (start with none)
   const [hobbies, setHobbies] = useState([])
 
-  // Options
   const genderOptions = [
     { label: 'Male', value: 'Male' },
     { label: 'Female', value: 'Female' },
